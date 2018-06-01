@@ -20,7 +20,7 @@
   Output: 3) the GEOMS (geometric objects) are what you see in the plot (points, lines, shapes) 
   
 - Class: text
-  Output: 4) FACETS are the panels used in conditional plots. You've used these or seen them used in the first ggplot2 (qplot) lesson.
+  Output: 4) FACETS are panels of different subsets of the data.
 
 - Class: text
   Output: 5) STATS are statistical transformations such as binning, quantiles, and smoothing which ggplot2 applies to the data. 
@@ -29,13 +29,13 @@
   Output: 6) SCALES show what coding an aesthetic map uses (for example, male = red, female = blue). 
   
 - Class: text
-  Output: 7) the COORDINATE SYSTEM upon which the plots are depicted. When you use qplot these were taken care of for you.
+  Output: 7) the COORDINATE SYSTEM upon which the plots are depicted.
 
 - Class: text
   Output: When building plots with ggplot2,  the plots are built up in layers, maybe in several steps. You can plot the data, then overlay a summary (for instance, a regression line or smoother) and then add any metadata and annotations you need.
 
 - Class: cmd_question
-  Output: First we'll create a variable g by assigning to it the output of a call to ggplot with 2 arguments. The first is mpg (our dataset) and the second will tell ggplot what we want to plot, in this case, displ and hwy. These are what we want our aesthetics to represent so we enclose these as two arguments to the function aes. Try this now. 
+  Output: First we'll create a variable g by assigning to it the output of a call to ggplot with 2 arguments. The first is mpg (our dataset) and the second will tell ggplot what we want to plot, in this case, displ and hwy. These are what we want our aesthetics to represent so we enclose these as two arguments to the function aes. This looks something like 'g <- ggplot(data, aes(var1,var2))'. Try this now. 
   CorrectAnswer: g <- ggplot(mpg,aes(displ,hwy))
   AnswerTests: expr_creates_var("g"); omnitest(correctExpr='g <- ggplot(mpg,aes(displ,hwy))')
   Hint: Type g <- ggplot(mpg, aes(displ,hwy) ) at the command prompt.
@@ -49,11 +49,6 @@
   AnswerTests: omnitest(correctExpr='summary(g)')
   Hint: Type summary(g) at the command prompt.
 
-- Class: text
-  Output: So g contains the mpg data with all its named components in a 234 by 11 matrix. It also contains a mapping, x (displ) and y (hwy) which you specified. 
-  CorrectAnswer: print(g)
-  AnswerTests: omnitest(correctExpr='print(g)')
-  Hint: Typeprint(g) at the command prompt.
 
 - Class: cmd_question
   Output: Note that if you tried to print g with the expressions g or print(g) you'd get an error! Even though it's a great package, ggplot doesn't know how to display the data yet since you didn't specify how you wanted to see it. Now type g+geom_point() and see what happens.
