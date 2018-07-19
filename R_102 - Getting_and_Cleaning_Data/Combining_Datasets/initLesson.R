@@ -8,4 +8,4 @@
 
 # Put initialization code in this file.
 path_to_course <- file.path(.get_course_path(),
-                            "R_102 - Getting_And_Cleaning_Data","RStudio")
+                            "R_102 - Getting_And_Cleaning_Data","Combining_Data")
