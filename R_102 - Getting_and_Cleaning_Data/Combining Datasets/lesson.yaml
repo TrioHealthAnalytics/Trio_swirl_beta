@@ -1,0 +1,14 @@
+- Class: meta
+  Course: R_102 - Getting_and_Cleaning_Data
+  Lesson: RStudio
+  Author: Michael Marks
+  Type: Standard
+  Organization: Trio Health
+  Version: 2.4.2
+
+- Class : text
+  Output: This lesson on combining data is just a single video from the series you've been watching so far. 
+  
+- Class: video
+  Output: Do you want to open the video tutorial on combining data?
+  VideoLink: https://www.youtube.com/watch?v=AuBgYDCg1Cg&index=4&list=PL9HYL-VRX0oQOWAFoKHFQAsWAI3ImbNPk

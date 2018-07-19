@@ -12,6 +12,10 @@
 - Class: text
   Output: One unique aspect of dplyr is that the same set of tools allow you to work with tabular data from a variety of sources, including data frames, data tables, databases and multidimensional arrays. In this lesson, we'll focus on data frames, but everything you learn will apply equally to other formats.
 
+- Class: video
+  Output: Do you want to open the video tutorial on dplyr?
+  VideoLink: https://www.youtube.com/watch?v=Zc_ufg4uW4U&index=3&list=PL9HYL-VRX0oQOWAFoKHFQAsWAI3ImbNPk
+
 - Class: text
   Output: 'As you may know, "CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R" (http://cran.rstudio.com/). RStudio maintains one of these so-called ''CRAN mirrors'' and they generously make their download logs publicly available (http://cran-logs.rstudio.com/). We''ll be working with the log from July 8, 2014, which contains information on roughly 225,000 package downloads.'
 

@@ -6,12 +6,16 @@
   Organization: JHU Biostat, adapted by Improvement Path Systems
   Version: 2.2.15
 
-- Class: text
+- Class: text`
   Output: In this lesson, you'll learn how to tidy your data with the tidyr package.
 
 - Class: text
   Output: Parts of this lesson will require the use of dplyr. If you don't have a basic knowledge of dplyr, you should exit this lesson and begin with the dplyr lessons from earlier in the course.
 
+- Class: video
+  Output: Do you want to open the video tutorial on tidyr?
+  VideoLink: https://www.youtube.com/watch?v=1ELALQlO-yM&list=PL9HYL-VRX0oQOWAFoKHFQAsWAI3ImbNPk&index=2
+  
 - Class: cmd_question
   Output: tidyr was automatically installed (if necessary) and loaded when you started this lesson. Just to build the habit, (re)load the package with library(tidyr).
   CorrectAnswer: library(tidyr)

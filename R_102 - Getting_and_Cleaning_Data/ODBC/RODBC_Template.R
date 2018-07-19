@@ -2,7 +2,7 @@
 library(RODBC)
 
 #' Connect to an Open Database Connection (ODBC) called sql-2008R2. This should be the same name you assigned in the ODBC Data Source Administrator. 
-cn <- odbcConnect("sql-2008R2")
+cn <- odbcConnect("triosqldb")
 
 #'  Store a SQL query in a string, run it, and store results in a variable. 
 #'  It's very important to note that any quotes in your query will need to be escaped with a backslash as seen below. https://en.wikipedia.org/wiki/Escape_character
